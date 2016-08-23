@@ -13,6 +13,8 @@ Router.map(function() {
   this.route('bills-results');
   this.route('bill-details', {path: '/bills/:bill_id'});
   this.route('legislator', {path: '/legislators/:bioguide_id'});
+  this.route('word-search');
+  this.route('word-results', {path: '/words/:phrase'});
 });
 
 export default Router;

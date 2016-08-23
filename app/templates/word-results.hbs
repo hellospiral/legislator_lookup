@@ -1,0 +1,11 @@
+{{#if model.length}}
+  <ul class="list-group">
+    {{#each model as |year|}}
+      <li class="list-group-item">
+        {{year.year}}: {{year.count}} times
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <h5>This phrase wasn't used</h5>
+{{/if}}

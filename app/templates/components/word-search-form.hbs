@@ -1,0 +1,12 @@
+<div class="container">
+  <h4>See how often a word or phrase has been used in congress:</h4>
+
+  <form>
+    <div class="form-group">
+      <label for="phrase"></label>
+      {{input class="form-control" value=phrase id="phrase"}}
+    </div>
+
+    <button class="btn btn-primary" {{action 'wordLookup'}}>Submit</button>
+  </form>
+</div>
