@@ -2,6 +2,12 @@
 
 <ul class='list-group'>
   {{#each model as |committee|}}
-    <li class="list-group-item"> {{committee.name}}</li>
+    {{#if committee.subcommittee}}
+      <li class="list-group-item">{{committee.name}}</li>
+    {{else}}
+      <li class="list-group-item">{{#link-to 'subcommittees' committee.committee_id}}{{committee.name}}{{/link-to}}</li>
+    {{/if}}
   {{/each}}
 </ul>
+
+<button class='btn btn-primary btn-sm' {{action 'next'}}>next page</button>

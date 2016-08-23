@@ -1,0 +1,13 @@
+<h2>Subcommittees</h2>
+
+<hr>
+
+{{#if model.length}}
+  <ul class='list-group'>
+    {{#each model as |subcommittee|}}
+      <li class="list-group-item">{{subcommittee.name}}</li>
+    {{/each}}
+  </ul>
+{{else}}
+  <h4>This committee has no subcomittees</h4>
+{{/if}}
