@@ -1,0 +1,28 @@
+{{#if model.short_title}}
+  <h1>{{model.short_title}}</h1>
+  <h4>{{model.official_title}}</h4>
+{{else}}
+  <h4>{{model.official_title}}</h4>
+{{/if}}
+
+<hr>
+
+<h5>Sponsor: {{model.sponsor.title}} {{model.sponsor.first_name}} {{model.sponsor.last_name}} </h5>
+
+<br>
+
+<h5>Commitees:</h5>
+
+<ul class="list-group">
+  {{#each model.committee_ids as |committee|}}
+    <li class="list-group-item">{{committee}}</li>
+  {{/each}}
+</ul>
+
+<br>
+
+<h5>Introduced on: {{model.introduced_on}}</h5>
+
+<br>
+
+<h5><a href={{model.last_version.urls.pdf}}>Latest Version</a></h5>
