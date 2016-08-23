@@ -1,5 +1,7 @@
-<ul>
+<h3>Your legislators:</h3>
+
+<ul class="list-group">
   {{#each model as |legislator|}}
-    <li> {{legislator.first_name}} {{legislator.last_name}}<br>Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
+    <li class="list-group-item"> {{legislator.first_name}} {{legislator.last_name}}<br>Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
   {{/each}}
 </ul>
