@@ -1,17 +1,19 @@
-<ul class='list-group'>
-  {{#each model as |bill|}}
-    {{#if bill.short_title}}
-      <li class="list-group-item">
-        {{#link-to 'bill-details' bill.bill_id}}
-          {{bill.short_title}}
-        {{/link-to}}
-      </li>
-      {{else}}
-        {{#link-to 'bill-details' bill.bill_id}}
-          <li class="list-group-item">
-            {{bill.official_title}}
-          </li>
-        {{/link-to}}
-    {{/if}}
-  {{/each}}
-</ul>
+<div class='container'>
+  <ul class='list-group'>
+    {{#each model as |bill|}}
+      {{#if bill.short_title}}
+        <li class="list-group-item">
+          {{#link-to 'bill-details' bill.bill_id}}
+            {{bill.short_title}}
+          {{/link-to}}
+        </li>
+        {{else}}
+          {{#link-to 'bill-details' bill.bill_id}}
+            <li class="list-group-item">
+              {{bill.official_title}}
+            </li>
+          {{/link-to}}
+      {{/if}}
+    {{/each}}
+  </ul>
+</div>

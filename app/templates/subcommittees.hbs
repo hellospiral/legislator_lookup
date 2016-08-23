@@ -2,12 +2,15 @@
 
 <hr>
 
-{{#if model.length}}
-  <ul class='list-group'>
-    {{#each model as |subcommittee|}}
-      <li class="list-group-item">{{subcommittee.name}}</li>
-    {{/each}}
-  </ul>
-{{else}}
-  <h4>This committee has no subcomittees</h4>
-{{/if}}
+<div class="container">
+
+  {{#if model.length}}
+    <ul class='list-group'>
+      {{#each model as |subcommittee|}}
+        <li class="list-group-item">{{subcommittee.name}}</li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <h4>This committee has no subcomittees</h4>
+  {{/if}}
+</div>

@@ -1,0 +1,13 @@
+<h1>{{model.title}} {{model.first_name}} {{model.last_name}} ({{model.party}}) </h1>
+
+<hr>
+
+<div class="container">
+  <h5>{{model.state_name}} {{model.chamber}} district {{model.district}}</h5>
+  <h5>Phone Number: {{model.phone}}</h5>
+  {{#if model.contact_form}}
+    <h5><a href={{model.contact_form}}>Contact Form</a></h5>
+  {{/if}}
+  <h5>Website: <a href={{model.website}}>{{model.website}}</a></h5>
+
+</div>

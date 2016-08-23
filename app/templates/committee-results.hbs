@@ -1,11 +1,15 @@
 <h2>Committees:</h2>
 
-<ul class='list-group'>
-  {{#each model as |committee|}}
-    {{#if committee.subcommittee}}
-      <li class="list-group-item">{{committee.name}}</li>
-    {{else}}
-      <li class="list-group-item">{{#link-to 'subcommittees' committee.committee_id}}{{committee.name}}{{/link-to}}</li>
-    {{/if}}
-  {{/each}}
-</ul>
+<div class="container">
+
+  <ul class='list-group'>
+    {{#each model as |committee|}}
+      {{#if committee.subcommittee}}
+        <li class="list-group-item">{{committee.name}}</li>
+      {{else}}
+        <li class="list-group-item">{{#link-to 'subcommittees' committee.committee_id}}{{committee.name}}{{/link-to}}</li>
+      {{/if}}
+    {{/each}}
+  </ul>
+
+</div>
