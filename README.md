@@ -1,6 +1,6 @@
 # Legislator Lookup
 
-This project was built to practice making requests to third-party APIs in Ember. It usesSunlight Foundation's Congress API to provide users with a variety of information about legislators, committees, recent and upcoming bills, and other information.
+This project was built to practice making requests to third-party APIs in Ember. It uses Sunlight Foundation's Congress API to provide users with a variety of information about legislators, committees, recent and upcoming bills, and other information.
 
 ## Completed user stories:
 
