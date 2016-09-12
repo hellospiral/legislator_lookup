@@ -1,7 +1,27 @@
-# Legislator-lookup
+# Legislator Lookup
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project was built to practice making requests to third-party APIs in Ember. It usesSunlight Foundation's Congress API to provide users with a variety of information about legislators, committees, recent and upcoming bills, and other information.
+
+## Completed user stories:
+
+* I would like to be able to look up contact information for my legislators by zip so that I can contact them.
+* I would like to see the list of committees in the house and in the senate.
+* I would like to select a committee and see its subcommittees.
+* I would like to see a list of recent bills.
+* I would like to be able to select a bill and see more information about it.
+* I would like to be able to link to the sponsor of a bill and see details about the sponsor, including contact information. 
+* I want to be able to navigate through the site with a navbar.
+
+## Technologies used:
+
+* Ember
+* Node
+* Bower
+* Sass
+* Bootstrap
+* Javascript
+* HTML
+* CSS
 
 ## Prerequisites
 
@@ -39,9 +59,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
@@ -50,4 +67,10 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## License
+
+This software is licensed under the MIT license.
+
+Copyright (c) 2016 Matt Carlson
 
